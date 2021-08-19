@@ -7,7 +7,8 @@ import Header from './Header';
 export default function Acceuil() {
     return (        
         <>
-        <Header/>
+            <Header />
+            
           <Switch>                
              <Route path='/about' component={About}/>  
              <Route exact path='/' component={Home}/>               

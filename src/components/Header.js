@@ -8,7 +8,7 @@ const Header = () => {
         <>
          <Navbar className="color-nav" variant="dark"  collapseOnSelect fixed='top' expand='lg' >
             <Container>
-            <Navbar.Brand href="/">Home</Navbar.Brand>
+            <Navbar.Brand className="navbar-brand" href="/">Home</Navbar.Brand>
             <Nav className="me-auto">
             <Nav.Link href="/home">Trade</Nav.Link>
             <Nav.Link href="/service">Produit</Nav.Link>
@@ -19,7 +19,10 @@ const Header = () => {
             <Button variant="primary">Se connecter</Button>
             </Container>
                 
-        </Navbar>
+            </Navbar>
+            <br />
+            <br />
+            <br />
         </>    
        
     )
