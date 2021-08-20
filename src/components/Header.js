@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../src/logo-bg.png'
+import logo from '../../src/logo-b-w.png'
 import { Navbar, Nav, Container, Button } from 'react-bootstrap'
 import './Styles/styleNavbar.css'
 import {LinkContainer} from 'react-router-bootstrap'
@@ -9,8 +9,8 @@ const Header = () => {
         <>
          <Navbar className="color-nav" variant="dark"  collapseOnSelect fixed='top' expand='lg' >
             <Container>
-                    <Navbar.Brand style={{marginRight:250}} href="/">
-                        <img src={logo} width="50" height="50" alt="Buurmarkets"/>
+                    <Navbar.Brand style={{marginRight:200}} href="/">
+                        <img src={logo} width="" height="30" alt="Buurmarkets"/>
             </Navbar.Brand>
             <Nav className="me-auto">
             <Nav.Link style={{marginRight:45 ,fontWeight:'bold'}} href="/home">Trade</Nav.Link>
