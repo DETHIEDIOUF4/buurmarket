@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../../src/logo-bg.png'
 import { Navbar, Nav, Container, Button } from 'react-bootstrap'
 import './Styles/styleNavbar.css'
 import {LinkContainer} from 'react-router-bootstrap'
@@ -8,13 +9,15 @@ const Header = () => {
         <>
          <Navbar className="color-nav" variant="dark"  collapseOnSelect fixed='top' expand='lg' >
             <Container>
-            <Navbar.Brand className="navbar-brand" href="/">Home</Navbar.Brand>
+                    <Navbar.Brand style={{marginRight:250}} href="/">
+                        <img src={logo} width="50" height="50" alt="Buurmarkets"/>
+            </Navbar.Brand>
             <Nav className="me-auto">
-            <Nav.Link href="/home">Trade</Nav.Link>
-            <Nav.Link href="/service">Produit</Nav.Link>
-             <Nav.Link href="/about">CopyPortfolio</Nav.Link>
-                        <Nav.Link href="/file">Actualités</Nav.Link>
-                        <Nav.Link href="/file">Société</Nav.Link>
+            <Nav.Link style={{marginRight:45 ,fontWeight:'bold'}} href="/home">Trade</Nav.Link>
+            <Nav.Link style={{marginRight:45 ,fontWeight:'bold'}} href="/service">Produit</Nav.Link>
+             <Nav.Link style={{marginRight:45 , fontWeight:'bold'}} href="/about">CopyPortfolio</Nav.Link>
+                        <Nav.Link style={{marginRight:45 ,fontWeight:'bold'}} href="/file">Actualités</Nav.Link>
+                        <Nav.Link style={{marginRight:45 , fontWeight:'bold'}} href="/file">Société</Nav.Link>
              </Nav>
             <Button variant="primary">Se connecter</Button>
             </Container>
