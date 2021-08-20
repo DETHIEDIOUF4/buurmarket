@@ -1,5 +1,6 @@
 import './Styles/stylefirstpage.css'
 import callapp from '../img/callapp.png'
+import { auto } from 'async'
 export default function Home() {
     return (
         <>
@@ -11,7 +12,7 @@ export default function Home() {
          <div class="col-lg-6 ml-auto">
             <div class="device-wrapper mx-auto">
               <div className="img-div "data-device="iPhoneX"  data-color="black">
-                 <img class="img-fluid" style={{ width: 320,alignSelf:'center' }} src={callapp} alt=""/>
+                 <img class="img-fluid" style={{ width:350 ,alignSelf:'center',marginLeft:auto,marginRight:auto }} src={callapp} alt=""/>
               </div>
             </div>
           </div>       
