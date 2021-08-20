@@ -2,7 +2,6 @@ import React from 'react'
 import logo from '../../src/logo-b-w.png'
 import { Navbar, Nav, Container, Button } from 'react-bootstrap'
 import './Styles/styleNavbar.css'
-import {LinkContainer} from 'react-router-bootstrap'
 
 const Header = () => {
     return (
@@ -12,12 +11,12 @@ const Header = () => {
                     <Navbar.Brand style={{marginRight:200}} href="/">
                         <img src={logo} width="" height="30" alt="Buurmarkets"/>
             </Navbar.Brand>
-            <Nav className="me-auto">
-            <Nav.Link style={{marginRight:45 ,fontWeight:'bold'}} href="/home">Trade</Nav.Link>
-            <Nav.Link style={{marginRight:45 ,fontWeight:'bold'}} href="/service">Produit</Nav.Link>
+                <Nav className="me-auto">
+                <Nav.Link style={{marginRight:45 ,fontWeight:'bold'}} href="/home">Trade</Nav.Link>
+                <Nav.Link style={{marginRight:45 ,fontWeight:'bold'}} href="/service">Produit</Nav.Link>
              <Nav.Link style={{marginRight:45 , fontWeight:'bold'}} href="/about">CopyPortfolio</Nav.Link>
-                        <Nav.Link style={{marginRight:45 ,fontWeight:'bold'}} href="/file">Actualités</Nav.Link>
-                        <Nav.Link style={{marginRight:45 , fontWeight:'bold'}} href="/file">Société</Nav.Link>
+             <Nav.Link style={{marginRight:45 ,fontWeight:'bold'}} href="/file">Actualités</Nav.Link>
+             <Nav.Link style={{marginRight:45 , fontWeight:'bold'}} href="/file">Société</Nav.Link>
              </Nav>
             <Button variant="primary">Se connecter</Button>
             </Container>
