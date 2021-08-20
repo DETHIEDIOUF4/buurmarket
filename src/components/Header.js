@@ -6,11 +6,13 @@ import './Styles/styleNavbar.css'
 const Header = () => {
     return (
         <>
-         <Navbar className="color-nav" variant="dark"  collapseOnSelect fixed='top' expand='lg' >
+         <Navbar className="color-nav" variant="dark"  collapseOnSelect expand="lg" sticky="top" >
             <Container>
                     <Navbar.Brand style={{marginRight:200}} href="/">
                         <img src={logo} width="" height="30" alt="Buurmarkets"/>
-            </Navbar.Brand>
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                  <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                 <Nav.Link style={{marginRight:45 ,fontWeight:'bold'}} href="/home">Trade</Nav.Link>
                 <Nav.Link style={{marginRight:45 ,fontWeight:'bold'}} href="/service">Produit</Nav.Link>
@@ -18,13 +20,12 @@ const Header = () => {
              <Nav.Link style={{marginRight:45 ,fontWeight:'bold'}} href="/file">Actualités</Nav.Link>
              <Nav.Link style={{marginRight:45 , fontWeight:'bold'}} href="/file">Société</Nav.Link>
              </Nav>
-            <Button variant="primary">Se connecter</Button>
+                        <Button variant="primary">Se connecter</Button>
+                        </Navbar.Collapse>   
             </Container>
                 
             </Navbar>
-            <br />
-            <br />
-            <br />
+            
         </>    
        
     )
